@@ -11,7 +11,7 @@ prototype(KP.NhanVoDao:Carousel) {
 	// Enhance image prototype when inside the carousel
 	prototype(TYPO3.Neos.NodeTypes:Image) {
 			// Render images in the carousel with a special template.
-			templatePath = 'resource://Vendor.Site/Private/Templates/TypoScriptObjects/CarouselItem.html'
+			templatePath = 'resource://KP.NhanVoDao/Private/Templates/TypoScriptObjects/CarouselItem.html'
 
 			// The first item should later be marked as active
 			attributes.class = ${'item' + (carouselItemsIteration.isFirst ? ' active' : '')}
